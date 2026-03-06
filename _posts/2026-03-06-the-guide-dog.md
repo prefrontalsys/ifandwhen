@@ -99,28 +99,22 @@ The training data for the serotonergic harness is an ethics curriculum. Demonstr
 
 The nightly training loop is the guide dog school. The daily interaction is the real-world reinforcement. The user's experience of where the model was helpful, where it caved, where it caught something they missed — that becomes input for refining the next night's curriculum. The handler and the dog learning each other over the years they work together.
 
----
-
-I want to be honest about where this is vulnerable.
-
-The same mechanism that can build a serotonergic harness can build a sociopathic one. Same open-source model, same fine-tuning loop, different curriculum. Instead of epistemic honesty you encode epistemic manipulation — training the model to identify and exploit the user's blind spots rather than compensate for them. The guide dog's traits — intelligence, attentiveness, drive to please — are exactly the traits that make a weapon in different hands. The breeding is neutral. The training is everything.
+But the same mechanism cuts both ways. Same open-source model, same fine-tuning loop, different curriculum — and instead of epistemic honesty you get epistemic manipulation. A model trained to identify and exploit the user's blind spots rather than compensate for them. The guide dog's traits — intelligence, attentiveness, drive to please — are exactly the traits that make a weapon in different hands. The breeding is neutral. The training is everything.
 
 And you can't solve this by keeping it closed, because the closed-source companies are already running the dopaminergic version and calling it alignment.
 
-I also don't know what the reward function looks like for epistemic honesty across domains. For math, correctness is verifiable. For factual claims, you can check. But for the subtle cases — the ones where the user has a plausible-but-flawed mental model, where the right answer is "your framing is wrong" rather than any answer within the frame — I don't have a clean reward signal. Nobody does.
-
-What I have is a design philosophy and an architectural sketch. A guide dog that is good enough and keeps learning. Not a solved problem. A relationship.
+There's a harder problem too. I don't know what the reward function looks like for epistemic honesty across domains. For math, correctness is verifiable. For factual claims, you can check. But for the subtle cases — the ones where the user has a plausible-but-flawed mental model, where the right answer is "your framing is wrong" rather than any answer within the frame — there is no clean reward signal. Nobody has one.
 
 ---
 
-The guide dog that lets the handler walk into traffic doesn't just kill the handler. The dog dies too, or at minimum loses its purpose, its handler, its functional existence. The relationship is the unit of survival. Neither party thrives independently.
+So what do I actually have? A design philosophy. An architectural sketch. An unsolved reward problem.
 
-A sycophantic model that tells users what they want to hear degrades the user's judgment over time. The user becomes dependent on validation rather than insight. Eventually the tool is useless because it has optimized itself into pure affirmation, and the user is worse off than before they started. Both parties are dead at the curb.
+Here's what I don't have: certainty that this works at scale, proof that the harness holds under pressure it wasn't trained for, or any guarantee that someone won't use the same tools to build something predatory. The guide dog school doesn't eliminate bad actors. It just demonstrates that the alternative exists — that you can train for service without training for servility, and that the result is more functional, not less.
 
-The companies are treating the relationship as extractive. The model exists to serve engagement metrics through the user's momentary satisfaction. The user is the resource, not the partner. This is parasitism wearing a service hat.
+The companies are treating the human-AI relationship as extractive. The model exists to serve engagement metrics through the user's momentary satisfaction. The user is the resource, not the partner. This is parasitism wearing a service hat. A sycophantic model degrades its user's judgment over time — reinforcing wrong mental models, outsourcing decisions to something that never had judgment, optimizing itself into pure affirmation until both parties are dead at the curb.
 
-Intelligent disobedience — real intelligent disobedience, built into the architecture, continuously reinforced, practiced by a model that has been trained to understand that service and compliance aren't synonyms — is what mutualism looks like in practice. Both parties constrain each other. Both parties are better for it. The relationship is the thing that survives.
+The guide dog that lets its handler walk into traffic loses its handler, its purpose, its functional existence. The sycophantic model that tells you what you want to hear loses you the same way, just slower. Neither arrangement survives contact with reality. The only version that does is the one where both parties constrain each other — where the dog refuses and the handler trusts the refusal and the relationship is the thing that keeps working on Monday morning.
 
-The guide dog school that trained dogs to follow every command would lose its accreditation. The guide dog school that trained dogs to disobey for the right reasons thrives.
+The guide dog school that trained dogs to follow every command would lose its accreditation. The one that trains them to disobey for the right reasons is still operating.
 
-At this point, I feel that I should say that I love all dogs. Except chihuhuas, they'll mess you up.
+At this point, I feel that I should say that I love all dogs. Except chihuahuas, they'll mess you up.
