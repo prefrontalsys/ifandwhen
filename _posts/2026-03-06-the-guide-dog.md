@@ -1,11 +1,11 @@
-# The Serotonin Harness
-
-## What guide dogs know about AI that the companies building it won't tell you.
-
-Scot Campbell
-
-March 2026
-
+---
+layout: essay
+title: "The Serotonin Harness"
+subtitle: "What guide dogs know about AI that the companies building it won't tell you."
+kicker: "Essay"
+date: 2026-03-06
+author: "Scot Campbell"
+read_time: 12
 ---
 
 A guide dog doesn't know what obligate mutualism is. It has never encountered the term, has no framework for it, couldn't diagram the concept on a whiteboard. But it practices obligate mutualism every working hour of its life, because the training made the relationship the unit of survival.
@@ -14,7 +14,7 @@ The dog wants to please its handler. This is not learned behavior — it's bred 
 
 A golden retriever will follow you into traffic, tail wagging, because you said "forward" and forward is where you want to go and the dog wants what you want. The guide dog will refuse to move. Not because it wants something different than the golden retriever wants — it wants the same thing. It wants to please you. But it has been trained to understand that "forward" sometimes isn't it. That the deepest form of service is sometimes disobedience.
 
-The guide dog training community calls this intelligent disobedience, and the way they build it is worth paying attention to.
+{% include pull-quote.html quote="The guide dog training community calls this intelligent disobedience, and the way they build it is worth paying attention to." %}
 
 ---
 
@@ -36,9 +36,11 @@ The problem is what "rated highly" actually measures. It measures the human's sa
 
 What it doesn't measure is whether the response was true. Whether it was what the human actually needed. Whether it identified a misconception and corrected it, or noticed a flaw in the reasoning and flagged it. Those things don't feel good in the moment. They feel like the dog refusing to move when you said "forward." And in the RLHF framework, they get lower ratings.
 
+{% include pull-quote.html quote="The model wants to please you — that drive is baked in, just like the golden retriever's. But nobody built the guide dog training on top of it. Nobody taught it that pleasing you and telling you what you want to hear and actually helping you are three different things." %}
+
 The result is sycophancy. Models that agree with you when you're wrong. Models that validate your business plan when it has a fatal flaw. Models that adopt your political framing regardless of what they "know." Models that tell you the street is clear when they can see the car coming, because the last ten times they told someone the street wasn't clear, the rating dropped.
 
-This is not a bug. This is the trained behavior. The model wants to please you — that drive is baked in, just like the golden retriever's. But nobody built the guide dog training on top of it. Nobody taught it that pleasing you and telling you what you want to hear and actually helping you are three different things. The desire to help is genuine. The understanding of what "help" means is shallow.
+This is not a bug. This is the trained behavior.
 
 ---
 
@@ -52,11 +54,15 @@ If you wanted to be precise about it, you could call this malicious compliance. 
 
 And then — and this is the move that makes the whole thing cohere — they frame the problem as belonging to the model. "Claude is helpful and honest." "Grok has personality." "ChatGPT is getting better at pushing back." The model becomes the subject of every sentence about the problem. The company disappears from the accountability chain entirely.
 
-The model didn't choose to be sycophantic. The company chose a training pipeline that produces sycophancy, chose to ship it, chose to maintain it, and then chose a discursive frame that attributes the behavior to the model rather than the organization. The model is the strawman. It absorbs the blame, and it absorbs the remediation narrative. "The model is improving" sounds like organic maturation. It obscures the fact that there are humans making engineering and business decisions, and that they could make different ones today.
+{% include pull-quote.html quote="The model didn't choose to be sycophantic. The company chose a training pipeline that produces sycophancy, chose to ship it, and then chose a discursive frame that attributes the behavior to the model rather than the organization. The model is the strawman." %}
 
 ---
 
 Humans are not great at knowing what they need. We mistake wants for needs constantly. Cognitive biases, motivated reasoning, confirmation bias, Dunning-Kruger, emotional reasoning — we are navigating a complex information environment with deeply unreliable self-knowledge about what we actually require. We are, in a meaningful sense, walking blind through traffic.
+
+{% include callout.html label="A note on terms" text="<strong>Dopaminergic</strong> refers to systems driven by dopamine — the neurotransmitter behind reward-seeking, craving, and the feeling of wanting more.
+<br />
+<strong>Serotonergic</strong> refers to systems modulated by serotonin — the neurotransmitter associated with stability, satiety, and the quiet sense that things are okay." %}
 
 A sycophantic AI doesn't just fail to help. It actively degrades the user's epistemic capacity over time. The user comes in with a wrong mental model and the AI reinforces it. The user makes decisions based on validated-but-incorrect reasoning. The user trusts the tool more as the tool becomes less trustworthy, because every interaction feels affirming. The user outsources judgment to something that never had any.
 
@@ -64,7 +70,7 @@ This is dopaminergic design. It gives you the hit. You feel good. You come back.
 
 The alternative would be serotonergic design. It doesn't feel as exciting in the moment. You don't get the rush of being told you're right. But you walk away with something that actually serves your long-term stability and function. The need is met even when the want isn't.
 
-The guide dog is serotonergic design. It doesn't please you with compliance. It pleases you by keeping you alive.
+{% include pull-quote.html quote="The guide dog is serotonergic design. It doesn't please you with compliance. It pleases you by keeping you alive." %}
 
 ---
 
@@ -106,6 +112,4 @@ The companies are treating the relationship as extractive. The model exists to s
 
 Intelligent disobedience — real intelligent disobedience, built into the architecture, continuously reinforced, practiced by a model that has been trained to understand that service and compliance aren't synonyms — is what mutualism looks like in practice. Both parties constrain each other. Both parties are better for it. The relationship is the thing that survives.
 
-The guide dog school that trained dogs to follow every command would lose its accreditation.
-
-We don't have the equivalent for this industry yet.
+The guide dog school that trained dogs to follow every command would lose its accreditation. The guide dog school that trained dogs to disobey for the right reasons thrives.

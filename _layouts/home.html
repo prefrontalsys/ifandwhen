@@ -8,7 +8,31 @@ layout: default
 </div>
 
 <ul class="post-list">
+  {% assign pinned_posts = site.posts | where: "pinned", true %}
+  {% for post in pinned_posts %}
+  <li class="post-list-item">
+    <div class="post-kicker"><span class="pinned-indicator">Pinned</span> {{ post.kicker | default: "Essay" }}</div>
+    <h2 class="post-list-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    {% if post.subtitle %}
+    <p class="post-list-excerpt">{{ post.subtitle }}</p>
+    {% else %}
+    <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    {% endif %}
+    <div class="post-list-meta">
+      <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+      {% if post.read_time %}
+      <span class="dot"></span>
+      <span>{{ post.read_time }} min read</span>
+      {% endif %}
+      <span class="dot"></span>
+      <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+    </div>
+  </li>
+  {% endfor %}
   {% for post in site.posts %}
+  {% unless post.pinned %}
   <li class="post-list-item">
     <div class="post-kicker">{{ post.kicker | default: "Essay" }}</div>
     <h2 class="post-list-title">
@@ -29,5 +53,6 @@ layout: default
       <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
     </div>
   </li>
+  {% endunless %}
   {% endfor %}
 </ul>

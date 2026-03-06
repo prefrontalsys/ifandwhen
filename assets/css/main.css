@@ -213,6 +213,11 @@ a {
   background: var(--accent);
 }
 
+.pinned-indicator {
+  color: var(--muted);
+  margin-right: 0.4em;
+}
+
 .post-list-title {
   font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: 700;
@@ -539,6 +544,34 @@ a {
   font-size: 0.82rem;
   line-height: 1.6;
   color: var(--muted);
+}
+
+/* ── CALLOUT ────────────────────────────────────────────── */
+
+.callout {
+  background: var(--aside-bg);
+  border-top: 2px solid var(--rule);
+  padding: 1.5rem 1.8rem;
+  margin: 2.5rem 0;
+}
+
+.callout-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+
+.callout p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin: 0;
 }
 
 /* ── RELATED ESSAYS ──────────────────────────────────────── */

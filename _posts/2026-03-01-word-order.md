@@ -5,6 +5,7 @@ subtitle: "The two-word difference that determines what you build, what you fund
 kicker: "Essay"
 date: 2026-03-01
 author: "Scot Campbell"
+pinned: true
 read_time: 14
 ---
 
