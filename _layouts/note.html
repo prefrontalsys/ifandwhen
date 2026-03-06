@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="essay-header">
+  <div class="essay-kicker">{{ page.kicker | default: "Note" }}</div>
+  <h1 class="essay-title">{{ page.title }}</h1>
+  <div class="essay-meta">
+    <span class="byline">{{ page.author | default: site.author.name }}</span>
+    <span class="dot"></span>
+    <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+  </div>
+</div>
+
+<article class="note-body">
+  {{ content }}
+</article>

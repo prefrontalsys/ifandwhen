@@ -1,0 +1,53 @@
+title: "If and When"
+description: "Writing from inside the machine."
+url: "https://ifandwhen.com"
+baseurl: ""
+author:
+  name: "Scot Campbell"
+  bio: "Product manager and solution architect. Independent researcher. Writing from inside the machine."
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Pagination (optional, enable if you want paginated index)
+# plugins:
+#   - jekyll-paginate
+# paginate: 10
+# paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .github
+  - vendor
+
+# Collections (optional — for non-post content like notes)
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "essay"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
