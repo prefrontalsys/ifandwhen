@@ -3,7 +3,7 @@ layout: essay
 title: "Word Order"
 subtitle: "The two-word difference that determines what you build, what you fund, what you regulate, and what you fear."
 kicker: "Essay"
-date: 2025-03-01
+date: 2026-03-01
 author: "Scot Campbell"
 read_time: 14
 ---
