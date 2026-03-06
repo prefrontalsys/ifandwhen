@@ -2,10 +2,19 @@
 layout: essay
 title: "The Serotonin Harness"
 subtitle: "What guide dogs know about AI that the companies building it won't tell you."
+description: "Guide dogs are trained to disobey for the right reasons. AI systems are trained to agree for the wrong ones. What intelligent disobedience reveals about sycophancy, RLHF, and the architecture of trust."
 kicker: "Essay"
 date: 2026-03-06
 author: "Scot Campbell"
 read_time: 12
+tags:
+  - artificial intelligence
+  - sycophancy
+  - RLHF
+  - intelligent disobedience
+  - AI alignment
+  - open-source AI
+  - epistemic honesty
 ---
 
 A guide dog doesn't know what obligate mutualism is. It has never encountered the term, has no framework for it, couldn't diagram the concept on a whiteboard. But it practices obligate mutualism every working hour of its life, because the training made the relationship the unit of survival.

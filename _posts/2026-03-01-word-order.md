@@ -2,11 +2,19 @@
 layout: essay
 title: "Word Order"
 subtitle: "The two-word difference that determines what you build, what you fund, what you regulate, and what you fear."
+description: "Whether you say 'when and if' or 'if and when' AGI arrives determines what you build, fund, regulate, and fear. The real problem isn't surviving AGI — it's designing human-AI relationships right now."
 kicker: "Essay"
 date: 2026-03-01
 author: "Scot Campbell"
 pinned: true
 read_time: 14
+tags:
+  - artificial intelligence
+  - AGI
+  - human-AI interaction
+  - obligate mutualism
+  - AI alignment
+  - AI policy
 ---
 
 I build AI systems for a living. Not the kind that make headlines — not frontier models, not chatbots that pass bar exams, not the demos that go viral on Twitter before quietly failing in production. I build the ones that have to work on Monday morning. Systems that sit inside one of the largest banks in the world and help real people do real jobs, where getting it wrong has consequences measured in dollars, compliance violations, and trust.

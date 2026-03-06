@@ -6,6 +6,12 @@ author:
   name: "Scot Campbell"
   bio: "Product manager and solution architect. Independent researcher. Writing from inside the machine."
 
+# Social / SEO
+social:
+  name: "Scot Campbell"
+  links:
+    - "https://github.com/prefrontalsys"
+
 # Build
 markdown: kramdown
 highlighter: rouge
