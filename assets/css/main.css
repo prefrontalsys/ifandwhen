@@ -15,6 +15,16 @@
   --margin: clamp(1.5rem, 5vw, 4rem);
 }
 
+/* ── DARK THEME ─────────────────────────────────────────── */
+[data-theme="dark"] {
+  --ink: #e8e4dd;
+  --paper: #1a1a18;
+  --rule: #3a3832;
+  --accent: #d4563e;
+  --muted: #a09888;
+  --aside-bg: #252520;
+}
+
 /* ── RESET ───────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -102,6 +112,33 @@ a {
 }
 
 .masthead-nav a:hover { color: var(--ink); }
+
+/* ── THEME TOGGLE ───────────────────────────────────────── */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1.8rem;
+  color: var(--muted);
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle:hover { color: var(--ink); }
+
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun  { display: none; }
+
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun  { display: block; }
 
 /* ── FOOTER ──────────────────────────────────────────────── */
 .site-footer {
@@ -685,6 +722,8 @@ a {
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 640px) {
   .masthead-nav { display: none; }
+
+  .theme-toggle { margin-left: auto; }
 
   .essay-body blockquote,
   .pull-quote {
