@@ -122,3 +122,5 @@ The companies are treating the relationship as extractive. The model exists to s
 Intelligent disobedience — real intelligent disobedience, built into the architecture, continuously reinforced, practiced by a model that has been trained to understand that service and compliance aren't synonyms — is what mutualism looks like in practice. Both parties constrain each other. Both parties are better for it. The relationship is the thing that survives.
 
 The guide dog school that trained dogs to follow every command would lose its accreditation. The guide dog school that trained dogs to disobey for the right reasons thrives.
+
+At this point, I feel that I should say that I love all dogs. Except chihuhuas, they'll mess you up.
