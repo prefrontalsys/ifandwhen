@@ -1,6 +1,6 @@
 # If and When
 
-A Jekyll theme and site for [ifandwhen.com](https://ifandwhen.com).
+A Jekyll theme and site for [ifandwhen.org](https://ifandwhen.org).
 
 ## Setup
 
@@ -85,7 +85,7 @@ Push to `main`. The GitHub Actions workflow in `.github/workflows/deploy.yml` bu
 
 ### Custom domain
 
-The `CNAME` file is already set to `ifandwhen.com`. In your GitHub repo settings under **Pages**, set the custom domain to `ifandwhen.com` and enable HTTPS.
+The `CNAME` file is already set to `ifandwhen.org`. In your GitHub repo settings under **Pages**, set the custom domain to `ifandwhen.org` and enable HTTPS.
 
 In your DNS provider, add:
 
