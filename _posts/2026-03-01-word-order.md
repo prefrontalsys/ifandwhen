@@ -34,7 +34,7 @@ There's a phrase that shows up in almost every serious conversation about artifi
 
 This is not a small distinction. It's the fault line that runs beneath the entire AI discourse, and which side you stand on determines what you build, what you fund, what you regulate, and what you fear.
 
-{% include pull-quote.html quote="Certainty is a better product than nuance. Certainty gets funded. Certainty sells books. \"AGI is coming, here's how we survive it\" is a story. \"We're not sure what's coming, but here's how we think well about it\" is a seminar." %}
+{% include pull-quote.html quote="Certainty is a better product than nuance. Certainty gets funded. Certainty sells books. \"AGI is coming, taking all our jobs\" gets clicks, it's a story. \"We're not sure what's coming, but here's how we think well about it\" is a seminar." %}
 
 The "when and if" crowd has won the narrative. Not because they're right — nobody knows if they're right — but because certainty is a better product than nuance. The result is an AI discourse colonized by two subspecies of certainty: the accelerationists, who are certain AGI will be glorious, and the doomers, who are certain it will be catastrophic. They disagree on the outcome but agree on the premise. The *if* has been settled. All that remains is the *when*.
 

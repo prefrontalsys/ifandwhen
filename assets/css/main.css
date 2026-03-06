@@ -491,6 +491,17 @@ a {
   max-width: 52ch;
 }
 
+.pull-quote p::first-letter {
+  font-size: 4.2rem;
+  float: left;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 0.82;
+  margin-right: 0.1em;
+  margin-top: 0.08em;
+  color: var(--accent);
+}
+
 /* ── COMPARISON BOX ──────────────────────────────────────── */
 .comparison {
   display: grid;
@@ -692,6 +703,10 @@ a {
   }
 
   .essay-body > p:first-child::first-letter {
+    font-size: 3.2rem;
+  }
+
+  .pull-quote p::first-letter {
     font-size: 3.2rem;
   }
 
