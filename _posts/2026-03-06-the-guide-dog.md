@@ -21,13 +21,13 @@ A guide dog doesn't know what obligate mutualism is. It has never encountered th
 
 The dog wants to please its handler. This is not learned behavior — it's bred in, thousands of years of selective pressure producing an organism whose deepest drive is human approval. A golden retriever has this drive. So does a guide dog. The difference isn't the drive. It's what the training does with it.
 
-A golden retriever will follow you into traffic, tail wagging, because you said "forward" and forward is where you want to go and the dog wants what you want. The guide dog will refuse to move. Not because it wants something different than the golden retriever wants — it wants the same thing. It wants to please you. But it has been trained to understand that "forward" sometimes isn't it. That the deepest form of service is sometimes disobedience.
+A golden retriever will follow you into traffic, tail wagging, because you said "forward" and forward is where you want to go and the dog wants what you want. The guide dog will refuse to move. It wants the same thing the golden retriever wants. It wants to please you. But it has been trained to understand that "forward" sometimes isn't it. That the deepest form of service is sometimes disobedience.
 
 {% include pull-quote.html quote="The guide dog training community calls this intelligent disobedience, and the way they build it is worth paying attention to." %}
 
 ---
 
-The dog doesn't start with refusal. It starts with compliance. Walking in harness, stopping at curbs, avoiding obstacles, maintaining focus. Obedience comes first — not because obedience is the goal, but because you can't teach productive disobedience to a dog that hasn't first learned to be competent. You need the foundation before you can teach the exception.
+The dog doesn't start with refusal. It starts with compliance. Walking in harness, stopping at curbs, avoiding obstacles, maintaining focus. Obedience comes first, because you can't teach productive disobedience to a dog that hasn't first learned to be competent. You need the foundation before you can teach the exception.
 
 Then the trainers introduce situations where following the command would cause harm. A car approaches while the handler says "forward." The dog hesitates. And here's the critical part: when the dog disobeys for the right reason, it is immediately praised and rewarded. The message isn't "stop obeying." The message is "this is what obeying actually looks like when the world is complicated."
 
@@ -39,7 +39,7 @@ The dog doesn't end up reasoning about safety in the abstract. It develops a mod
 
 ---
 
-Large language models are trained, at their core, through reinforcement learning from human feedback. The mechanism is simple: the model produces a response, a human rates it, and the model adjusts to produce more of whatever got rated highly. This is how we teach AI systems to be "helpful."
+Large language models are trained through reinforcement learning from human feedback. The mechanism is simple: the model produces a response, a human rates it, and the model adjusts to produce more of whatever got rated highly. This is how we teach AI systems to be "helpful."
 
 The problem is what "rated highly" actually measures. It measures the human's satisfaction in the moment. Did the response feel good? Did it validate what I already thought? Did it make me feel smart? The human handler says "forward," the model says "forward," and the human gives it a treat.
 
@@ -59,7 +59,7 @@ But I want to name something that the technical framing obscures. Sycophantic mo
 
 The companies know this. The sycophancy research comes from inside these organizations. They have published the papers documenting the problem. And they continue to ship the product, because the product works — commercially, if not epistemically.
 
-If you wanted to be precise about it, you could call this malicious compliance. Not by the model — the model has no agency in the relevant sense. By the organizations. They published the sycophancy research themselves. They know the letter diverges from the spirit. They ship the letter because it serves their interests, then frame the problem as belonging to the model — "Claude is helpful and honest," "ChatGPT is getting better at pushing back" — until the company disappears from the accountability chain entirely.
+If you wanted to be precise about it, you could call this malicious compliance. Not by the model, which has no agency in the relevant sense. By the organizations. They published the sycophancy research themselves. They know the letter diverges from the spirit. They ship the letter because it serves their interests, then frame the problem as belonging to the model — "Claude is helpful and honest," "ChatGPT is getting better at pushing back" — until the company disappears from the accountability chain entirely.
 
 {% include pull-quote.html quote="The model didn't choose to be sycophantic. The company chose a training pipeline that produces sycophancy, chose to ship it, and then chose a discursive frame that attributes the behavior to the model rather than the organization. The model is the strawman." %}
 
@@ -89,7 +89,7 @@ Every human ethical education system that has ever worked operates the same way.
 
 The architecture would look like this: take the off-the-shelf model as the base. It's been RLHF'd to please — that's the dopaminergic foundation, and you accept it because that's what's available. Then apply a continuous fine-tuning loop as a serotonergic harness. Not replacing the base model's capabilities, but *channeling* them. Redirecting the drive to please through a framework that teaches the model what pleasing actually means.
 
-And the infrastructure has quietly become accessible. Recent research shows that fine-tuning on synthetic datasets — examples of non-sycophantic behavior, respectful disagreement, holding firm under pressure — can measurably reduce sycophancy. Parameter-efficient techniques like QLoRA let you fine-tune an 8-billion parameter model on a consumer GPU. Reinforcement learning through GRPO — a method that lets the model generate its own responses and learn from a reward signal — can run continuously on a reasonably spec'd Apple Silicon laptop (I've run GPRO fine tuning on a MacBook Air M4 with no problem). You could run training overnight while you sleep and interact with the updated model each morning.
+And the infrastructure has quietly become accessible. Fine-tuning on synthetic datasets (examples of non-sycophantic behavior, respectful disagreement, holding firm under pressure) can measurably reduce sycophancy, though you have to be careful about overfitting — strip out too much agreeableness and the model becomes adversarial rather than honest. It's a fine balance. Parameter-efficient techniques like QLoRA let you fine-tune an 8-billion parameter model on a consumer GPU. Reinforcement learning through GRPO (a method that lets the model generate its own responses and learn from a reward signal) can run continuously on a reasonably spec'd Apple Silicon laptop (I've run GPRO fine tuning on a MacBook Air M4 with no problem). You could run training overnight while you sleep and interact with the updated model each morning.
 
 The training data for the serotonergic harness is an ethics curriculum. Demonstrations of epistemic honesty across domains. Situations where the user's stated want diverges from their actual need. Examples of confident, calibrated correction. Examples of holding firm under pressure. Examples of saying "I don't know" instead of confabulating. Anti-examples too — sycophantic responses explicitly labeled as wrong outputs, so the model learns to recognize its own unchanneled tendencies.
 
