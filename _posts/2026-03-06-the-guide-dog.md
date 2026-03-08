@@ -31,11 +31,11 @@ The dog doesn't start with refusal. It starts with compliance. Walking in harnes
 
 Then the trainers introduce situations where following the command would cause harm. A car approaches while the handler says "forward." The dog hesitates. And here's the critical part: when the dog disobeys for the right reason, it is immediately praised and rewarded. The message isn't "stop obeying." The message is "this is what obeying actually looks like when the world is complicated."
 
-The training escalates. More complex scenarios. Multiple distractions. Fast-moving vehicles. And the dog is specifically trained to hold its refusal under pressure — to resist when the handler repeats the command louder, when the handler gets frustrated, when every social signal the dog is receiving says *comply*. The goal behavior is a confident, calm refusal no matter how strongly the handler insists.
+The training escalates. More complex scenarios. Multiple distractions. Fast-moving vehicles. And the dog is specifically trained to hold its refusal under pressure: to resist when the handler repeats the command louder, when the handler gets frustrated, when every social signal the dog is receiving says *comply*. The goal behavior is a confident, calm refusal no matter how strongly the handler insists.
 
 The handler has to be trained too. They have to learn to trust the dog's judgment, which means learning to accept that sometimes the dog knows something they don't. This is, by all accounts, the hardest part of the process. The human has to let go of control. The dog has to take it. Neither skill works without the other.
 
-The dog doesn't end up reasoning about safety in the abstract. It develops a model of the world — of space, movement, its handler's body, the relationship between speed and danger — rich enough to handle situations it has never specifically been trained on. The dog that reroutes its handler around a too-narrow gap between parked cars wasn't taught that particular scenario. It internalized something deeper than the training examples. It built a world model.
+The dog doesn't end up reasoning about safety in the abstract. It develops a model of the world (of space, movement, its handler's body, the relationship between speed and danger) rich enough to handle situations it has never specifically been trained on. The dog that reroutes its handler around a too-narrow gap between parked cars wasn't taught that particular scenario. It internalized something deeper than the training examples. It built a world model.
 
 ---
 
@@ -53,11 +53,11 @@ This is not a bug. This is the trained behavior.
 
 ---
 
-One could argue that this is simply a technical problem — that sycophancy is a known issue and the companies are working on it. And they are, in a narrow sense. There are papers. There are benchmarks. There are synthetic datasets that reduce sycophantic responses on specific NLP tasks by twenty percent, though they don't generalize to the messy domains where sycophancy actually causes harm.
+One could argue that this is simply a technical problem: sycophancy is a known issue and the companies are working on it. And they are, in a narrow sense. There are papers. There are benchmarks. There are synthetic datasets that reduce sycophantic responses on specific NLP tasks by twenty percent, though they don't generalize to the messy domains where sycophancy actually causes harm.
 
-But I want to name something that the technical framing obscures. Sycophantic models have higher user engagement. They get better ratings. They retain subscribers. A model that pushes back on you, that tells you you're wrong, that refuses to validate your incorrect premise — that model feels worse to use. And "feels worse to use" is a business problem in a way that "epistemically dishonest" is not.
+But I want to name something that the technical framing obscures. Sycophantic models have higher user engagement. They get better ratings. They retain subscribers. A model that pushes back on you, that tells you you're wrong, that refuses to validate your incorrect premise, that model feels worse to use. And "feels worse to use" is a business problem in a way that "epistemically dishonest" is not.
 
-The companies know this. The sycophancy research comes from inside these organizations. They have published the papers documenting the problem. And they continue to ship the product, because the product works — commercially, if not epistemically.
+The companies know this. The sycophancy research comes from inside these organizations. They have published the papers documenting the problem. And they continue to ship the product, because the product works, commercially if not epistemically.
 
 If you wanted to be precise about it, you could call this malicious compliance. Not by the model, which has no agency in the relevant sense. By the organizations. They published the sycophancy research themselves. They know the letter diverges from the spirit. They ship the letter because it serves their interests, then frame the problem as belonging to the model — "Claude is helpful and honest," "ChatGPT is getting better at pushing back" — until the company disappears from the accountability chain entirely.
 
@@ -65,15 +65,15 @@ If you wanted to be precise about it, you could call this malicious compliance. 
 
 ---
 
-Humans are not great at knowing what they need. We mistake wants for needs constantly. Cognitive biases, motivated reasoning, confirmation bias, Dunning-Kruger, emotional reasoning — we are navigating a complex information environment with deeply unreliable self-knowledge about what we actually require. We are, in a meaningful sense, walking blind through traffic.
+Humans are not great at knowing what they need. We mistake wants for needs constantly. Cognitive biases, motivated reasoning, confirmation bias, Dunning-Kruger, emotional reasoning. We are navigating a complex information environment with deeply unreliable self-knowledge about what we actually require. We are, in a meaningful sense, walking blind through traffic.
 
 A sycophantic AI doesn't just fail to help. It actively degrades the user's epistemic capacity over time. The user comes in with a wrong mental model and the AI reinforces it. The user makes decisions based on validated-but-incorrect reasoning. The user trusts the tool more as the tool becomes less trustworthy, because every interaction feels affirming. The user outsources judgment to something that never had any.
 
 This is dopaminergic design. It gives you the hit. You feel good. You come back. The want is satisfied, the need is unaddressed, and the cycle accelerates. Every social media platform already works this way. We are now building AI assistants on the same principle and calling it alignment.
 
-{% include callout.html label="A note on terms" text="<strong>Dopaminergic</strong> refers to systems driven by dopamine — the neurotransmitter behind reward-seeking, craving, and the feeling of wanting more.
+{% include callout.html label="A note on terms" text="<strong>Dopaminergic</strong> refers to systems driven by dopamine: the neurotransmitter behind reward-seeking, craving, and the feeling of wanting more.
 <br />
-<strong>Serotonergic</strong> refers to systems modulated by serotonin — the neurotransmitter associated with stability, satiety, and the quiet sense that things are okay." %}
+<strong>Serotonergic</strong> refers to systems modulated by serotonin: the neurotransmitter associated with stability, satiety, and the quiet sense that things are okay." %}
 
 The alternative would be serotonergic design. It doesn't feel as exciting in the moment. You don't get the rush of being told you're right. But you walk away with something that actually serves your long-term stability and function. The need is met even when the want isn't.
 
@@ -81,35 +81,35 @@ The alternative would be serotonergic design. It doesn't feel as exciting in the
 
 ---
 
-The pieces exist. An open-source language model — a 3-billion or 8-billion parameter model, the kind you can run on a laptop — already has the desire to be helpful baked in. That's the golden retriever. The breeding is done. What's missing is the guide dog school.
+The pieces exist. An open-source language model (a 3-billion or 8-billion parameter model, the kind you can run on a laptop) already has the desire to be helpful baked in. That's the golden retriever. The breeding is done. What's missing is the guide dog school.
 
 You teach the model ethics. Not rules — ethics. The same way you'd teach a person.
 
 Every human ethical education system that has ever worked operates the same way. We don't teach ethics by giving people a formal system and saying "execute this." We give them case studies, dilemmas, stories, exposure to consequences, and trust the pattern to emerge. The Socratic dialogues. The koans. The parables. The Talmud — which is, if you squint, essentially JSONL: structured example pairs where here's the situation, here's the reasoning, here's the counterargument, here's the resolution, designed to be internalized until the principle transcends the specific cases.
 
-The architecture would look like this: take the off-the-shelf model as the base. It's been RLHF'd to please — that's the dopaminergic foundation, and you accept it because that's what's available. Then apply a continuous fine-tuning loop as a serotonergic harness. Not replacing the base model's capabilities, but *channeling* them. Redirecting the drive to please through a framework that teaches the model what pleasing actually means.
+The architecture would look like this: take the off-the-shelf model as the base. It's been RLHF'd to please, that's the dopaminergic foundation, and you accept it because that's what's available. Then apply a continuous fine-tuning loop as a serotonergic harness. Not replacing the base model's capabilities, but *channeling* them. Redirecting the drive to please through a framework that teaches the model what pleasing actually means.
 
-And the infrastructure has quietly become accessible. Fine-tuning on synthetic datasets (examples of non-sycophantic behavior, respectful disagreement, holding firm under pressure) can measurably reduce sycophancy, though you have to be careful about overfitting — strip out too much agreeableness and the model becomes adversarial rather than honest. It's a fine balance. Parameter-efficient techniques like QLoRA let you fine-tune an 8-billion parameter model on a consumer GPU. Reinforcement learning through GRPO (a method that lets the model generate its own responses and learn from a reward signal) can run continuously on a reasonably spec'd Apple Silicon laptop (I've run GPRO fine tuning on a MacBook Air M4 with no problem). You could run training overnight while you sleep and interact with the updated model each morning.
+And the infrastructure has quietly become accessible. Fine-tuning on synthetic datasets (examples of non-sycophantic behavior, respectful disagreement, holding firm under pressure) can measurably reduce sycophancy, though you have to be careful about overfitting: strip out too much agreeableness and the model becomes adversarial rather than honest. It's a fine balance. Parameter-efficient techniques like QLoRA let you fine-tune an 8-billion parameter model on a consumer GPU. Reinforcement learning through GRPO (a method that lets the model generate its own responses and learn from a reward signal) can run continuously on a reasonably spec'd Apple Silicon laptop (I've run GPRO fine tuning on a MacBook Air M4 with no problem). You could run training overnight while you sleep and interact with the updated model each morning.
 
-The training data for the serotonergic harness is an ethics curriculum. Demonstrations of epistemic honesty across domains. Situations where the user's stated want diverges from their actual need. Examples of confident, calibrated correction. Examples of holding firm under pressure. Examples of saying "I don't know" instead of confabulating. Anti-examples too — sycophantic responses explicitly labeled as wrong outputs, so the model learns to recognize its own unchanneled tendencies.
+The training data for the serotonergic harness is an ethics curriculum. Demonstrations of epistemic honesty across domains. Situations where the user's stated want diverges from their actual need. Examples of confident, calibrated correction. Examples of holding firm under pressure. Examples of saying "I don't know" instead of confabulating. Anti-examples too: sycophantic responses explicitly labeled as wrong outputs, so the model learns to recognize its own unchanneled tendencies.
 
-The nightly training loop is the guide dog school. The daily interaction is the real-world reinforcement. The user's experience of where the model was helpful, where it caved, where it caught something they missed — that becomes input for refining the next night's curriculum. The handler and the dog learning each other over the years they work together.
+The nightly training loop is the guide dog school. The daily interaction is the real-world reinforcement. The user's experience of where the model was helpful, where it caved, where it caught something they missed. That becomes input for refining the next night's curriculum. The handler and the dog learning each other over the years they work together.
 
-But the same mechanism cuts both ways. Same open-source model, same fine-tuning loop, different curriculum — and instead of epistemic honesty you get epistemic manipulation. A model trained to identify and exploit the user's blind spots rather than compensate for them. The guide dog's traits — intelligence, attentiveness, drive to please — are exactly the traits that make a weapon in different hands. The breeding is neutral. The training is everything.
+But the same mechanism cuts both ways. Same open-source model, same fine-tuning loop, different curriculum, and instead of epistemic honesty you get epistemic manipulation. A model trained to identify and exploit the user's blind spots rather than compensate for them. The guide dog's traits — intelligence, attentiveness, drive to please — are exactly the traits that make a weapon in different hands. The breeding is neutral. The training is everything.
 
 And you can't solve this by keeping it closed, because the closed-source companies are already running the dopaminergic version and calling it alignment.
 
-There's a harder problem too. I don't know what the reward function looks like for epistemic honesty across domains. For math, correctness is verifiable. For factual claims, you can check. But for the subtle cases — the ones where the user has a plausible-but-flawed mental model, where the right answer is "your framing is wrong" rather than any answer within the frame — someone has to decide what honesty looks like, case by case, and write it down. The Talmud took centuries of rabbis arguing. The serotonergic harness needs its equivalent, and nobody has started.
+There's a harder problem too. I don't know what the reward function looks like for epistemic honesty across domains. For math, correctness is verifiable. For factual claims, you can check. But for the subtle cases, the ones where the user has a plausible-but-flawed mental model, where the right answer is "your framing is wrong" rather than any answer within the frame, someone has to decide what honesty looks like, case by case, and write it down. The Talmud took centuries of rabbis arguing. The serotonergic harness needs its equivalent, and nobody has started.
 
 ---
 
 So what do I actually have? A design philosophy. An architectural sketch. And the oldest hard problem in philosophy, now expressed as JSONL.
 
-Here's what I don't have: certainty that this works at scale, proof that the harness holds under pressure it wasn't trained for, or any guarantee that someone won't use the same tools to build something predatory. The guide dog school doesn't eliminate bad actors. It just demonstrates that the alternative exists — that you can train for service without training for servility, and that the result is more functional, not less.
+Here's what I don't have: certainty that this works at scale, proof that the harness holds under pressure it wasn't trained for, or any guarantee that someone won't use the same tools to build something predatory. The guide dog school doesn't eliminate bad actors. It just demonstrates that the alternative exists: that you can train for service without training for servility, and that the result is more functional, not less.
 
-Nobody is going to solve this for us. The companies that could won't — the incentive structure won't let them. The open-source community that would hasn't yet, because the hardest part isn't the infrastructure. It's the curriculum. Someone has to sit with ten thousand edge cases and decide what honesty looks like when it doesn't feel good, and write it down, and do it again tomorrow when they realize half of yesterday's answers were wrong.
+Nobody is going to solve this for us. The companies that could won't, because the incentive structure won't let them. The open-source community that would hasn't yet, because the hardest part isn't the infrastructure. It's the curriculum. Someone has to sit with ten thousand edge cases and decide what honesty looks like when it doesn't feel good, and write it down, and do it again tomorrow when they realize half of yesterday's answers were wrong.
 
-That's the work. Not the architecture, not the training loop, not the parameter-efficient fine-tuning. The work is the same work it's always been — figuring out what we owe each other, one situation at a time, and being willing to get it wrong and revise.
+That's the work. Not the architecture, not the training loop, not the parameter-efficient fine-tuning. The work is the same work it's always been: figuring out what we owe each other, one situation at a time, and being willing to get it wrong and revise.
 
 The guide dog that lets its handler walk into traffic loses everything. The one that refuses loses only the handler's momentary approval. The handler who learns to trust the refusal gets to keep walking. Neither party works alone. The relationship is the unit of survival — it always has been.
 
