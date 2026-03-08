@@ -21,16 +21,14 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Pagination (optional, enable if you want paginated index)
-# plugins:
-#   - jekyll-paginate
-# paginate: 10
-# paginate_path: "/page:num/"
+paginate: 5
+paginate_path: "/page:num/"
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from build
 exclude:

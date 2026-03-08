@@ -8,51 +8,87 @@ layout: default
 </div>
 
 <ul class="post-list">
-  {% assign pinned_posts = site.posts | where: "pinned", true %}
-  {% for post in pinned_posts %}
-  <li class="post-list-item">
-    <div class="post-kicker"><span class="pinned-indicator">Pinned</span> {{ post.kicker | default: "Essay" }}</div>
-    <h2 class="post-list-title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    {% if post.subtitle %}
-    <p class="post-list-excerpt">{{ post.subtitle }}</p>
-    {% else %}
-    <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    {% endif %}
-    <div class="post-list-meta">
-      <span>{{ post.date | date: "%B %-d, %Y" }}</span>
-      {% if post.read_time %}
-      <span class="dot"></span>
-      <span>{{ post.read_time }} min read</span>
+  {% comment %} Pinned posts: show only on page 1 {% endcomment %}
+  {% if paginator.page == 1 %}
+    {% assign pinned_posts = site.posts | where: "pinned", true %}
+    {% for post in pinned_posts %}
+    <li class="post-list-item">
+      <div class="post-kicker"><span class="pinned-indicator">Pinned</span> {{ post.kicker | default: "Essay" }}</div>
+      <h2 class="post-list-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      {% if post.subtitle %}
+      <p class="post-list-excerpt">{{ post.subtitle }}</p>
+      {% else %}
+      <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
       {% endif %}
-      <span class="dot"></span>
-      <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
-    </div>
-  </li>
-  {% endfor %}
-  {% for post in site.posts %}
-  {% unless post.pinned %}
-  <li class="post-list-item">
-    <div class="post-kicker">{{ post.kicker | default: "Essay" }}</div>
-    <h2 class="post-list-title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    {% if post.subtitle %}
-    <p class="post-list-excerpt">{{ post.subtitle }}</p>
-    {% else %}
-    <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
-    {% endif %}
-    <div class="post-list-meta">
-      <span>{{ post.date | date: "%B %-d, %Y" }}</span>
-      {% if post.read_time %}
-      <span class="dot"></span>
-      <span>{{ post.read_time }} min read</span>
+      <div class="post-list-meta">
+        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+        {% if post.read_time %}
+        <span class="dot"></span>
+        <span>{{ post.read_time }} min read</span>
+        {% endif %}
+        <span class="dot"></span>
+        <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+      </div>
+    </li>
+    {% endfor %}
+  {% endif %}
+
+  {% comment %} Paginated posts: exclude pinned to avoid duplication {% endcomment %}
+  {% for post in paginator.posts %}
+    {% unless post.pinned %}
+    <li class="post-list-item">
+      <div class="post-kicker">{{ post.kicker | default: "Essay" }}</div>
+      <h2 class="post-list-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      {% if post.subtitle %}
+      <p class="post-list-excerpt">{{ post.subtitle }}</p>
+      {% else %}
+      <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
       {% endif %}
-      <span class="dot"></span>
-      <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
-    </div>
-  </li>
-  {% endunless %}
+      <div class="post-list-meta">
+        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+        {% if post.read_time %}
+        <span class="dot"></span>
+        <span>{{ post.read_time }} min read</span>
+        {% endif %}
+        <span class="dot"></span>
+        <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+      </div>
+    </li>
+    {% endunless %}
   {% endfor %}
 </ul>
+
+{% comment %} Pagination navigation {% endcomment %}
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="Page navigation">
+  <div class="pagination-inner">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link pagination-prev" rel="prev">
+        &larr; <span>Newer</span>
+      </a>
+    {% else %}
+      <span class="pagination-link pagination-prev pagination-disabled">
+        &larr; <span>Newer</span>
+      </span>
+    {% endif %}
+
+    <span class="pagination-info">
+      Page {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link pagination-next" rel="next">
+        <span>Older</span> &rarr;
+      </a>
+    {% else %}
+      <span class="pagination-link pagination-next pagination-disabled">
+        <span>Older</span> &rarr;
+      </span>
+    {% endif %}
+  </div>
+</nav>
+{% endif %}
