@@ -14,7 +14,7 @@ This site is where I think out loud about those questions. The essays here are n
 
 **If and When** takes its name from the word-order distinction at the center of the first essay. "When and if" treats arrival as the default. "If and when" leads with the uncertainty. That distinction is the operating principle for everything here.
 
-You can reach me at <span class="eml" data-u="olleh" data-d="gro.nehwdnadfi">&#9993;</span>.
+You can reach me at <span class="eml" data-u="olleh" data-d="gro.nehwdnafi">&#9993;</span>.
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {

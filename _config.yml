@@ -7,6 +7,7 @@ author:
   bio: "Product manager and solution architect. Independent researcher. Writing from inside the machine."
 
 # Social / SEO
+image: /assets/img/social-card.png
 social:
   name: "Scot Campbell"
   links:
@@ -27,7 +28,6 @@ paginate_path: "/page:num/"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
   - jekyll-paginate
 
 # Exclude from build

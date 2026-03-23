@@ -812,3 +812,37 @@ a {
     gap: 1rem;
   }
 }
+
+/* ── 404 PAGE ──────────────────────────────────────────── */
+.error-page {
+  max-width: var(--col-width);
+  margin: 0 auto;
+  padding: 6rem var(--margin) 4rem;
+  text-align: center;
+}
+
+.error-title {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: var(--ink);
+  margin: 0 0 1rem;
+}
+
+.error-desc {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.error-link {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.error-link:hover {
+  text-decoration: underline;
+}

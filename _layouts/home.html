@@ -29,7 +29,7 @@ layout: default
         <span>{{ post.read_time }} min read</span>
         {% endif %}
         <span class="dot"></span>
-        <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+        <a class="read-more" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">Read &rarr;</a>
       </div>
     </li>
     {% endfor %}
@@ -55,7 +55,7 @@ layout: default
         <span>{{ post.read_time }} min read</span>
         {% endif %}
         <span class="dot"></span>
-        <a class="read-more" href="{{ post.url | relative_url }}">Read &rarr;</a>
+        <a class="read-more" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">Read &rarr;</a>
       </div>
     </li>
     {% endunless %}
