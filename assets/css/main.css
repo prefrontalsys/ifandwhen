@@ -111,7 +111,8 @@ a {
   transition: color 0.15s;
 }
 
-.masthead-nav a:hover { color: var(--ink); }
+.masthead-nav a:hover,
+.masthead-nav a.active { color: var(--ink); }
 
 /* ── THEME TOGGLE ───────────────────────────────────────── */
 .theme-toggle {

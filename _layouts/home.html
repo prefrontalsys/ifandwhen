@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="home-header">
-  <h1 class="home-title">{{ site.title }}</h1>
-  <p class="home-desc">{{ site.description }}</p>
+  <h1 class="home-title">{{ page.page_title | default: site.title }}</h1>
+  <p class="home-desc">{{ page.page_desc | default: site.description }}</p>
 </div>
 
 <ul class="post-list">
-  {% comment %} Pinned posts: show only on page 1 {% endcomment %}
-  {% if paginator.page == 1 %}
+  {% comment %} Pinned posts: show only on home page 1 {% endcomment %}
+  {% if paginator.page == 1 and page.url == '/' %}
     {% assign pinned_posts = site.posts | where: "pinned", true %}
     {% for post in pinned_posts %}
     <li class="post-list-item">

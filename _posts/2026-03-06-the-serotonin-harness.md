@@ -4,6 +4,7 @@ title: "The Serotonin Harness"
 subtitle: "What guide dogs know about AI that the companies building it won't tell you."
 description: "Guide dogs are trained to disobey for the right reasons. AI systems are trained to agree for the wrong ones. What intelligent disobedience reveals about sycophancy, RLHF, and the architecture of trust."
 kicker: "Essay"
+category: essays
 date: 2026-03-06
 author: "Scot Campbell"
 read_time: 12

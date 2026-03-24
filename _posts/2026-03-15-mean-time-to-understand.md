@@ -4,6 +4,7 @@ title: "Mean Time to Understand"
 subtitle: "The only metric that measures whether humans and AI are understanding faster together."
 description: "Everyone measures Mean Time to Resolve. Nobody measures Mean Time to Understand. MTTU is where the real time goes in every major incident, and it's the only metric that tells you whether humans and AI are actually making each other better — or whether one side is atrophying while the other compensates."
 kicker: "Essay"
+category: essays
 date: 2026-03-15
 author: "Scot Campbell"
 read_time: 14

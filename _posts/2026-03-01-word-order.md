@@ -4,6 +4,7 @@ title: "Word Order"
 subtitle: "The two-word difference that determines what you build, what you fund, what you regulate, and what you fear."
 description: "Whether you say 'when and if' or 'if and when' AGI arrives determines what you build, fund, regulate, and fear. The real problem isn't surviving AGI — it's designing human-AI relationships right now."
 kicker: "Essay"
+category: essays
 date: 2026-03-01
 author: "Scot Campbell"
 pinned: true

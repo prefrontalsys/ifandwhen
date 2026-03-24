@@ -4,6 +4,7 @@ title: "Wall With Nails"
 subtitle: "A coffee shop art movement, a geocoding algorithm, and the question of whether noticing requires a nervous system."
 description: "A college art movement called Accidentalism — selecting found beauty with index cards — becomes a lens for understanding what pattern recognition actually is. If noticing is mechanistic, the question isn't whether machines can think. It's whether they can be surprised."
 kicker: "Field Notes"
+category: field-notes
 date: 2026-03-18
 author: "Scot Campbell"
 read_time: 12
