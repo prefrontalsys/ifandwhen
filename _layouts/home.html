@@ -8,8 +8,8 @@ layout: default
 </div>
 
 <ul class="post-list">
-  {% comment %} Pinned posts: show only on home page 1 {% endcomment %}
-  {% if paginator.page == 1 and page.url == '/' %}
+  {% comment %} Pinned posts: show only on home page 1 (nav_active is nil on home) {% endcomment %}
+  {% if paginator.page == 1 and page.nav_active == nil %}
     {% assign pinned_posts = site.posts | where: "pinned", true %}
     {% for post in pinned_posts %}
     <li class="post-list-item">
@@ -35,9 +35,9 @@ layout: default
     {% endfor %}
   {% endif %}
 
-  {% comment %} Paginated posts: exclude pinned to avoid duplication {% endcomment %}
+  {% comment %} Paginated posts: exclude pinned on home to avoid duplication {% endcomment %}
   {% for post in paginator.posts %}
-    {% unless post.pinned %}
+    {% unless post.pinned and page.nav_active == nil %}
     <li class="post-list-item">
       <div class="post-kicker">{{ post.kicker | default: "Essay" }}</div>
       <h2 class="post-list-title">
