@@ -468,6 +468,61 @@ a {
   margin-bottom: 0 !important;
 }
 
+/* ── TABLES ─────────────────────────────────────────────── */
+.essay-body table {
+  width: 100%;
+  max-width: 66ch;
+  border-collapse: collapse;
+  margin: 2rem 0 2.5rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.essay-body thead th {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.essay-body tbody td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  vertical-align: top;
+}
+
+.essay-body tbody td:first-child {
+  font-weight: 500;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.essay-body tbody tr:last-child td {
+  border-bottom: 2px solid var(--ink);
+}
+
+@media (max-width: 640px) {
+  .essay-body table {
+    font-size: 0.78rem;
+  }
+
+  .essay-body thead th,
+  .essay-body tbody td {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .essay-body tbody td:first-child {
+    white-space: normal;
+  }
+}
+
 /* ── SECTION BREAK ───────────────────────────────────────── */
 .section-break {
   display: flex;
