@@ -5,3 +5,5 @@ _site/
 vendor/
 .memsearch/
 .DS_Store
+.fastembed_cache/
+dogfood-output/
